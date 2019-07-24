@@ -1,6 +1,14 @@
+h1{
+    color:whitesmoke;
+}
+
+h4{
+    color:whitesmoke;
+}
+
 body{
-    width: 960px; /*Lebar*/
-    margin: 30px auto; /*Tinggi*/
+    width: 960px; 
+    margin: 30px auto; /*Auto untuk center*/
 }
 
 main{
@@ -11,38 +19,58 @@ main{
     padding: 15px; /*Bezel*/
 }
 
-.head,
-.category,
-.content,
-.sidebar,
-.foot{
-    margin-bottom: 5px;
+.content{
     padding: 15px 0px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
+}
+.sidebar{
+    padding: 15px 0px;
+    background: rgb(255,212,35);
+    background: linear-gradient(0deg, rgba(255,212,35,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .head{
     width: 100%;
-    height: auto;
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    background-image: url(header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+    padding: 300px 0px 10px 0px;
+    margin-bottom: 0px;
+
+    
+}
+.head h1{
+    padding: 0px 0px 0px 10px;
 }
 
-.category{
-    width: 100$;
-    height: auto;
-    text-align: center;
-}
-
-.content{
-    width: 70%;
-}
-
-.sidebar{
-    width: 30%;
+.head h4{
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 0;
 }
 
 .foot{
-    width: 100%;
+    padding: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.foot p{    
     text-align: center;
+    color:white;
+    font-weight: bold;
+}
+
+.category{
+    margin-top: 0px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(180,58,58);
+    background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,235,29,1) 50%, rgba(252,207,69,1) 100%);
 }
 
 .category ul{
@@ -54,5 +82,26 @@ main{
 
 .category li{
     float: left;
-    margin: 0 10px;
+    margin: 0px 10px;
+    color: black;
+}
+
+.content{
+    width: 70%;
+}
+
+.sidebar{
+    width: 30%;
+    background-color:antiquewhite;
+}
+
+.sidebar li{
+    font-weight: bold;
+}
+
+a,
+li,
+p {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
