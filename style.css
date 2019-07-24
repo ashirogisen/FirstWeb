@@ -1,0 +1,58 @@
+body{
+    width: 960px; /*Lebar*/
+    margin: 30px auto; /*Tinggi*/
+}
+
+main{
+    display: flex; /*Dari Vertikal menjadi Horizontal*/
+}
+
+.pad_this{
+    padding: 15px; /*Bezel*/
+}
+
+.head,
+.category,
+.content,
+.sidebar,
+.foot{
+    margin-bottom: 5px;
+    padding: 15px 0px;
+}
+
+.head{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.category{
+    width: 100$;
+    height: auto;
+    text-align: center;
+}
+
+.content{
+    width: 70%;
+}
+
+.sidebar{
+    width: 30%;
+}
+
+.foot{
+    width: 100%;
+    text-align: center;
+}
+
+.category ul{
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.category li{
+    float: left;
+    margin: 0 10px;
+}
