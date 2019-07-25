@@ -1,42 +1,46 @@
-h1{
+h1 {
     color:whitesmoke;
 }
 
-h4{
+h4 {
     color:whitesmoke;
 }
 
-body{
-    width: 960px; 
+a,
+li,
+p {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*==============BODY===============*/
+
+body {
+    width: 1100px; /*Web size*/
     margin: 30px auto; /*Auto untuk center*/
+    border: 1px solid black;
 }
 
-main{
-    display: flex; /*Dari Vertikal menjadi Horizontal*/
+/*==============MAIN===============*/
+
+main {
+    display: flex; 
+    flex-direction: row; /*Dari Vertikal menjadi Horizontal*/
 }
 
-img{
-    background-size: 100%;
-    width: 70%
+/*==============IMG===============*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /*Baris 20-22 agar image posisi-nya jadi center*/
+    background-size: 100%; /*contain img*/
+    width: 80% 
 }
 
-.pad_this{
-    padding: 10px 15px 15px 15px; /*Bezel*/
-}
+/*==============HEAD===============*/
 
-.content{
-    padding: 0px 0px;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
-    text-align: justify;
-}
-.sidebar{
-    padding: 15px 0px;
-    background: rgb(255,212,35);
-    background: linear-gradient(0deg, rgba(255,212,35,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-.head{
+.head {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
@@ -47,36 +51,32 @@ img{
     object-fit: contain;
     padding: 300px 0px 10px 0px;
     margin-bottom: 0px;
+    width: 100%;
+    border-bottom: 1px solid black;
 }
 
-
-.head h1{
+.head h1 {
     padding: 0px 0px 0px 10px;
 }
 
-.head h4{
+.head h4 {
     padding: 0px 0px 0px 10px;
     margin-bottom: 0;
 }
 
-.foot{
-    padding: 5px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+header a {
+    text-decoration: none;
 }
 
-.foot p{    
-    text-align: center;
-    color:white;
-    font-weight: bold;
-}
+/*============CATEGORY=============*/
 
-.category{
+.category {
     margin-top: 0px;
     padding: 20px;
     text-align: center;
     background: rgb(180,58,58);
     background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,235,29,1) 50%, rgba(252,207,69,1) 100%);
+    border-bottom: 1px solid black;
 }
 
 .category ul{
@@ -102,18 +102,37 @@ img{
     color: #177e89;
 }
 
-.content{
+.content {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
+    text-align: justify;
     width: 70%;
+
 }
 
-.sidebar{
+/*=============SIDEBAR===============*/
+
+.sidebar {
     width: 30%;
-    background-color:antiquewhite;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 0;
     padding-bottom: 0;
+    background: rgb(255,212,35);
+    background: linear-gradient(0deg, rgba(255,212,35,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    color: #177e89;
 }
 
 .side-sidebar {
@@ -129,22 +148,33 @@ img{
     align-items: flex-start;
     margin-left: 20px;
     margin-top: 15px;
+    width: 70%;
+    border-bottom: 1px solid black;
 }
 
-.list-topic a {
-    margin-bottom: 10px;
+/*=============FOOTER===============*/
+
+.foot {
+    border-top: 1px solid black;
+    padding: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-.sidebar li{
+.foot p {    
+    text-align: center;
+    color:white;
     font-weight: bold;
 }
 
-a,
-li,
-p {
-    color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*================PAD=================*/
+
+.pad_this {
+    padding: 10px 15px 15px 15px; /*Bezel*/
+    
 }
+
+/*===========TITLE BORDER============*/
 
 .headline-wrapper {
     width: 100%;
@@ -155,3 +185,5 @@ p {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
 }
+
+/*===================================*/
