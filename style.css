@@ -195,12 +195,32 @@ background: linear-gradient(90deg, rgba(0,0,3,1) 0%, rgba(25,93,139,1) 100%);
     padding: 5px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .foot p {    
     text-align: center;
     color:white;
     font-weight: bold;
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    
+}
+
+.social img {
+    width: 20px;
+    cursor: pointer;
+    margin: 0;
 }
 
 /*================PAD=================*/
